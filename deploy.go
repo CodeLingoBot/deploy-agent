@@ -180,7 +180,7 @@ func pushImage(dockerClient *docker.Client, img docker.Image, auth docker.AuthCo
 		break
 	}
 	if err != nil {
-		return fmt.Errorf("Error pushing image: %v", err)
+		return fmt.Errorf("error pushing image: %v", err)
 	}
 	return nil
 }
